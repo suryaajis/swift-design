@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct SwiftLessonApp: App {
-    @StateObject private var appState = AppState()
+    @AppStorage("isLogin") var isLogin: Bool = false
     
     var body: some Scene {
         WindowGroup {
-            LoginView()
-                .environmentObject(appState)
+            ContentView()
+                .environmentObject(AppState(isLogin: $isLogin))
         }
     }
 }

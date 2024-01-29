@@ -7,13 +7,6 @@
 
 import SwiftUI
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        let appState = AppState()
-        return LoginView().environmentObject(appState)
-    }
-}
-
 struct LoginView: View {
     var body: some View {
         ZStack {
@@ -65,9 +58,11 @@ struct FormBox: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             
             Button(action: {
+                print(appState.isLogin)
                 if !username.isEmpty && !password.isEmpty {
-                    print(username + ", " + password)
                     appState.isLogin = true
+                    print(username + ", " + password)
+                    print(appState.isLogin)
                     username = ""
                     password = ""
                 }
@@ -80,9 +75,11 @@ struct FormBox: View {
                 .background(Color.black)
                 .foregroundColor(Color.white)
                 .cornerRadius(10)
-                .sheet(isPresented: $appState.isLogin) {
-                    AccountView().environmentObject(appState)
-                }
+//                .sheet(isPresented: $appState.isLogin) {
+//                    if appState.isLogin {
+//                        AccountView().environmentObject(appState)
+//                    }
+//                }
             }
         }
         .padding(.all, 20)

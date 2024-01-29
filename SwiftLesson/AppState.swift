@@ -8,5 +8,9 @@
 import SwiftUI
 
 class AppState: ObservableObject {
-    @Published var isLogin = false
+    @Published var isLogin: Bool
+
+    init(isLogin: Binding<Bool>) {
+        _isLogin = Published(initialValue: isLogin.wrappedValue)
+    }
 }

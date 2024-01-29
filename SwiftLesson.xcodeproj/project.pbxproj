@@ -16,6 +16,7 @@
 		DA562F802B652D6E004294F5 /* SwiftLessonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA562F7F2B652D6E004294F5 /* SwiftLessonTests.swift */; };
 		DA562F8A2B652D6E004294F5 /* SwiftLessonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA562F892B652D6E004294F5 /* SwiftLessonUITests.swift */; };
 		DA562F8C2B652D6E004294F5 /* SwiftLessonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA562F8B2B652D6E004294F5 /* SwiftLessonUITestsLaunchTests.swift */; };
+		DA5705422B67DC8500B192F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5705412B67DC8500B192F9 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		DA562F852B652D6E004294F5 /* SwiftLessonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLessonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA562F892B652D6E004294F5 /* SwiftLessonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLessonUITests.swift; sourceTree = "<group>"; };
 		DA562F8B2B652D6E004294F5 /* SwiftLessonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLessonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA5705412B67DC8500B192F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				DA562F6E2B652D6C004294F5 /* SwiftLessonApp.swift */,
 				DA07CA052B66819700793D3A /* AppState.swift */,
+				DA5705412B67DC8500B192F9 /* ContentView.swift */,
 				DA562F702B652D6C004294F5 /* LoginView.swift */,
 				DA07CA032B667E4500793D3A /* AccountView.swift */,
 				DA562F722B652D6D004294F5 /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA562F712B652D6C004294F5 /* LoginView.swift in Sources */,
+				DA5705422B67DC8500B192F9 /* ContentView.swift in Sources */,
 				DA07CA042B667E4500793D3A /* AccountView.swift in Sources */,
 				DA562F6F2B652D6C004294F5 /* SwiftLessonApp.swift in Sources */,
 				DA07CA062B66819700793D3A /* AppState.swift in Sources */,
